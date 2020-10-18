@@ -1,0 +1,13 @@
+/* Variables */
+$wallpaper: url('../images/136.jpg');
+
+ 
+  /* Set a specific color for each brand */
+  
+ 
+@each $redsocial in instagram, pinterest, facebook{
+    .fa-#{$redsocial} { 
+        background: #3B5998;
+        color: white;
+        }
+ }  
