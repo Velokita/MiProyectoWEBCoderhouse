@@ -23,29 +23,10 @@
 
     <link rel="stylesheet" type="text/css" href="css/estiloCSS.css">
 </head>
-<script>
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 20) {
-                $('#toTopBtn').fadeIn();
-            } else {
-                $('#toTopBtn').fadeOut();
-            }
-        });
+ 
 
-        $('#toTopBtn').click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 1000);
-            return false;
-        });
-    });
-</script>
-
-<body class="body">
-    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
-        data-abc="true"></a>
-
+<body class="body" >
+    
     <header>
         <h1 class="animate__animated animate__zoomIn">Bienvenido a Las Rosas - Blog de Costura</h1>
         <!--    Navegacion  -->
@@ -237,7 +218,15 @@
             <p class="footer__primary"> LasRosas.com.ar © 2020</p>
         </footer>
     </div>
-
+    <div class="scrolltop-wrap">
+        <a href="#" role="button" aria-label="Scroll to top">
+            <svg height="48" viewBox="0 0 48 48" width="48" height="48px" xmlns="http://www.w3.org/2000/svg">
+                <path id="scrolltop-bg" d="M0 0h48v48h-48z"></path>
+                <path id="scrolltop-arrow" d="M14.83 30.83l9.17-9.17 9.17 9.17 2.83-2.83-12-12-12 12z"></path>
+            </svg>
+        </a>
+      </div>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
