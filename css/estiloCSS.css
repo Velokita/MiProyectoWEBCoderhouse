@@ -15,10 +15,12 @@
 
 /* SCSS*/
 html {
+  overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth; }
 
-.body {
-  font-family: "Alice", cursive;
+body {
+  font-family: "Alice", cursive, sans-serif;
   background-image: url("../images/136.jpg"); }
 
 .nav__wallpaper {
@@ -146,11 +148,11 @@ p {
   pointer-events: none;
   backface-visibility: hidden; }
   .scrolltop-wrap #scrolltop-bg {
-    fill: #007bff; }
+    fill: #a80bbd; }
   .scrolltop-wrap #scrolltop-arrow {
     fill: white; }
   .scrolltop-wrap a:hover #scrolltop-bg {
-    fill: #2990ff; }
+    fill: #ca0de4; }
   .scrolltop-wrap a:hover #scrolltop-arrow {
     fill: white; }
   @supports (-moz-appearance: meterbar) {

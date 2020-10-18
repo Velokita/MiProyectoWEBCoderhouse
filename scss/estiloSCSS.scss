@@ -6,11 +6,13 @@
 
 /* SCSS*/
 html {
+    overflow-y: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
   }
   
-.body{
-    font-family: $alice;
+body{
+    font-family: $alice,sans-serif;
     background-image:$wallpaper;
 }
  
@@ -166,7 +168,7 @@ p{
 }
 
  
-
+//CodePen - Pure CSS Scroll To Top by rolandtoth
 @mixin setScrolltopColors($bgColor: red, $arrowColor: white, $bgColorHover: $bgColor, $arrowColorHover: $arrowColor) {
     #scrolltop-bg {
       fill: $bgColor;
@@ -189,7 +191,7 @@ p{
     $offsetBottom: 2rem;
     $offsetHorizontal: 2rem;
     $scrollToRevealDistance: 12rem; // scroll offset to reveal scroll-to-top link
-    $color: #007bff;
+    $color: #a80bbd;
     box-sizing: border-box;
     position: absolute;
     top: $scrollToRevealDistance;
@@ -237,4 +239,4 @@ p{
       display: none !important;
     }
   }
-  
+  //end - CodePen - Pure CSS Scroll To Top by rolandtoth
