@@ -4,21 +4,26 @@
 
 /* Links */
 a,
-a:focus,
-a:hover {
+a:focus
+ {
   color: #fff;
 }
 
 /* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
+.btn-secondary{
+  color: #e6679c;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: #f3beda;
+  border: .05rem solid rgb(241, 153, 212);
 }
 
+.btn-secondary:hover,
+.btn-secondary:focus {
+   text-shadow: none; /* Prevent inheritance from `body` */
+  color: #8429ce;
+  background-color: #d482d4;
+ border: .05rem solid #fff;
+}
 
 /*
  * Base structure
@@ -97,8 +102,7 @@ body {
   font-weight: 700;
 
 }
-
-
+ 
 /*
  * Footer
  */
