@@ -9,13 +9,26 @@ html {
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
+
   }
   
 body{
     font-family: $alice,sans-serif;
     background-image:$wallpaper;
 }
- 
+
+nav{
+  overflow: hidden;
+   position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+footer {
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the bottom of the page */
+  width: 100%; /* Full width */
+
+}
  
 .nav__wallpaper{
     background-color: $font-color6;
