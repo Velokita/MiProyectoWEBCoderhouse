@@ -23,6 +23,23 @@ body {
   font-family: "Alice", cursive, sans-serif;
   background-image: url("../images/136.jpg"); }
 
+nav {
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */ }
+
+footer {
+  position: fixed;
+  /* Set the navbar to fixed position */
+  bottom: 0;
+  /* Position the navbar at the bottom of the page */
+  width: 100%;
+  /* Full width */ }
+
 .nav__wallpaper {
   background-color: #d482d4; }
 
@@ -186,3 +203,29 @@ p {
   @media print {
     .scrolltop-wrap {
       display: none !important; } }
+
+.demo-icon-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0; }
+
+.demo-icon {
+  margin: 0;
+  padding: 1.5rem 1rem; }
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem; } }
