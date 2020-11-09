@@ -18,14 +18,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!--   icon library -->
-    <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/brands.css"
-        integrity="sha384-/feuykTegPRR7MxelAQ+2VUMibQwKyO6okSsWiblZAJhUSTF9QAVR0QLk6YwNURa" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/fontawesome.css"
-        integrity="sha384-ijEtygNrZDKunAWYDdV3wAZWvTHSrGhdUfImfngIba35nhQ03lSNgfTJAKaGFjk2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estiloCSS.css">
+    <!--   icon library -->
+    <script src="https://kit.fontawesome.com/e6f215fb44.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -93,11 +88,56 @@
         <section>
             <div class="card-columns">
                 <div class="card">
-                    <img src="./images/cut.jfif" class="card-img-top" alt="...">
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-pantalonJean" class="carousel slide carousel-fade" data-ride="carousel">
+                        <!--Indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-pantalonJean" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-pantalonJean" data-slide-to="1"></li>
+                            <li data-target="#carousel-pantalonJean" data-slide-to="2"></li>
+                        </ol>
+                        <!--/.Indicators-->
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="view">
+                                    <img class="d-block w-100" src="./images/pantalonpollera1.jpg" alt="First slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                    <img class="d-block w-100" src="./images/pantalonCartera1.jpg" alt="Second slide">
+                                    <div class="mask rgba-black-strong"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!--Mask color-->
+                                <div class="view">
+                                    <img class="d-block w-100" src="./images/pantalonVestido3.jpg" alt="Third slide">
+                                    <div class="mask rgba-black-slight"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Slides-->
+                        <!--Controls-->
+                        <a class="carousel-control-prev" href="#carousel-pantalonJean" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-pantalonJean" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!--/.Controls-->
+                    </div>
+                    <!--/.Carousel Wrapper-->
+
                     <div class="card-body">
                         <h5 class="card-title">Enterate de las últimas Ideas DIY</h5>
-                        <p class="card-text">Como hacer una falda de jean con un pantalón.</p>
-                        <a href="./pages/ideas_diy.html#seccion2" class="btn btn-primary card__button">Ir a Ideas
+                        <p> Cómo reutilizar un pantalón de jean.</p>
+                        <a href="./pages/404.html" class="btn btn-primary card__button">Ir a Ideas
                             DIY</a>
                     </div>
                 </div>
@@ -106,7 +146,7 @@
                         <p>La moda tiene dos propósitos: la comodidad y el amor.</p>
                         <footer class="blockquote-footer card__footer">
                             <small>
-                                <cite title="Source Title ">Coco Channel</cite>
+                                <cite title="Source Title " class="text-white">Coco Channel</cite>
                             </small>
                         </footer>
                     </blockquote>
@@ -148,16 +188,6 @@
                             Tutoriales</a>
                     </div>
                 </div>
-                <div class="card background-color text-dark text-center p-3">
-                    <blockquote class="blockquote mb-0">
-                        <p>La costura es magia y la magia es sueño y los sueños son maravillos para vivir. </p>
-                        <footer class="blockquote-footer  card__footer">
-                            <small>
-                                <cite title="Source Title"> Elie Saab </cite>
-                            </small>
-                        </footer>
-                    </blockquote>
-                </div>
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Cuál es el colmo de una costurera?</h5>
@@ -169,38 +199,103 @@
                 <div class="card">
                     <img src="./images/keepcalm.jpg" class="card-img-top" alt="...">
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Calendario de Eventos</h5>
-                        <img src="./images/calendario-2020.jpg" class="card-img-top" alt="...">
-                        <p class="card-text">Revisa los cursos disponibles en el año e inscribite.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Un Poco de Historia</h5>
-                        <img src="./images/dedal.jpg" class="card-img-top" alt="...">
-                        <p class="card-text"></p>
-                        <a href="./pages/historia.html" class="btn btn-primary card__button">Ir a Historia del Dedal</a>
-                        </p>
-                    </div>
-                </div>
                 <div class="card p-3 text-right">
                     <blockquote class="blockquote mb-0">
                         <p>Con los años he aprendido que lo importante en un vestido es la mujer que lo viste.
                         </p>
                         <footer class="blockquote-footer   card__footer">
                             <small>
-                                <cite title="Source Title">Yves Saint Laurent</cite>
+                                <cite class="text-white" title="Source Title">Yves Saint Laurent</cite>
                             </small>
                         </footer>
                     </blockquote>
                 </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Un Poco de Historia</h5>
+                        <img src="./images/la-historia-de-las-maquinas-de-coser.jpg" class="card-img-top" alt="...">
+                        <p class="card-text"></p>
+                        <a href="./pages/historia.html" class="btn btn-primary card__button">Ir a Historia</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card background-color text-light text-center p-3">
+                    <blockquote class="blockquote mb-0">
+                        <p>La costura es magia y la magia es sueño y los sueños son maravillos para vivir. </p>
+                        <footer class="blockquote-footer  card__footer">
+                            <small>
+                                <cite class="text-white" title="Source Title"> Elie Saab </cite>
+                            </small>
+                        </footer>
+                    </blockquote>
+                </div>
+
+
+
+                <div class="card text-center" style=" width: 18rem; margin-left: 70px;">
+                    <h5 class="card-title">Calendario de Eventos</h5>
+                    <img class="card-img-top" src="./images/calendario-2020.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Revisa los cursos disponibles en el año e inscribite.</p>
+                    </div>
+                </div>
         </section>
     </div>
 
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <div class="container py-4">
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
 
+                    <h6 class="font-italic font-weight-bold">Siguenos:</h6>
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"
+                                title="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank"
+                                title="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.pinterest.com" target="_blank"
+                                title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"
+                                title="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank"
+                                title="youtube"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="font-italic font-weight-bold mb-4">Sitio</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="#" class="text-muted">Inicio</a></li>
+                        <li class="mb-2"><a href="./pages/tutoriales.html" class="text-muted">Tutoriales</a></li>
+                        <li class="mb-2"><a href="./pages/historia.html" class="text-muted">Historia</a></li>
+                        <li class="mb-2"><a href="./pages/contacto.html" class="text-muted">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-6 mb-4 mb-lg-0">
 
+                </div>
+                <div class="col-lg-5 col-md-6 mb-lg-0">
+                    <h6 class=" font-weight-bold mb-4">Quiero recibir el Newsletter De Las Rosas!</h6>
+                    <form method="post" action="index.html">
+                        <input type="text" id="email" name="email" size="35"
+                            placeholder="Ingresa tu correo electrónico">
+                        <input type="submit" name="contact" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyrights -->
+        <div class="bg-light py-4">
+            <div class="container text-center">
+                <p class="text-muted mb-0 py-2">LasRosas.com.ar © CoderHouse Web 2020.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End -->
 
     <div class="scrolltop-wrap">
         <a href="#" role="button" aria-label="Scroll to top">
@@ -210,6 +305,7 @@
             </svg>
         </a>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
